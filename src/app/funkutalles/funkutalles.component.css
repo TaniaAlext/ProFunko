@@ -1,0 +1,130 @@
+/* Header Styles */
+#header {
+    background: #287ed4;
+    padding: 15px 0;
+}
+#header h1 {
+    font-size: 28px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: #e4e5e9;
+    margin: 0;
+}
+#header .navbar {
+    margin: 0;
+}
+#header .navbar ul {
+    display: flex;
+    list-style: none;
+}
+#header .navbar ul li {
+    margin-left: 20px;
+}
+#header .navbar ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+#header .btn-outline-dark {
+    color: #fff;
+    border: 1px solid #fff;
+}
+
+.header-container {
+    position: relative;
+    width: 100%;
+    height: 400px; /* Ajusta la altura según tus necesidades */
+}
+
+.header-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Esto asegurará que la imagen cubra completamente el contenedor */
+}
+
+.header-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    text-align: center;
+    background-color: rgba(6, 0, 189, 0.5); /* Fondo semi-transparente para mejor legibilidad */
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.header-text h1 {
+    margin: 0;
+    font-size: 3em;
+}
+
+.header-text p {
+    margin: 0;
+    font-size: 1.5em;
+}
+
+.funkutalles-container {
+    padding: 20px;
+    max-width: 1200px;
+    margin: 50px auto;
+}
+
+.section {
+    margin-bottom: 30px;
+}
+
+.section h3 {
+    text-decoration: underline;
+    text-decoration-color: #ff4500; /* Cambia este color según tu preferencia */
+}
+
+.content-container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.text-container {
+    flex: 1;
+    min-width: 200px;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.image-container {
+    flex: 1;
+    min-width: 200px;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.resized-image {
+    max-width: 100%;
+    max-height: 300px; /* Asegúrate de que todas las imágenes tengan la misma altura */
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 5px;
+}
+
+.histori-section {
+    background-color: #287ed4;
+    max-width: 1200px;
+    padding: 50px;
+    margin: 5px auto;
+}
+
+.video-container {
+    display: flex;
+    justify-content: center;
+    margin: 50px 0;
+    background-color: #595cf9;
+    padding: 20px;
+}
+
+.video-container iframe {
+    width: 100%;
+    max-width: 560px;
+    border: none;
+    border-radius: 4px;
+}

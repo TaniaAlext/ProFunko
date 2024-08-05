@@ -1,0 +1,65 @@
+
+<header id="header" class="d-flex align-items-center">
+    <div class="container d-flex justify-content-between align-items-center">
+     
+        <h1 class="title">ProFunko</h1>
+      
+      <nav id="navbar" class="navbar">
+        <ul>
+          <li><a routerLink="/home">INICIO</a></li>
+          <li><a routerLink="/acercaDe">ACERCA DE</a></li>
+          <li><a routerLink="/funkutalles">FUNKOTALLES</a></li>
+          <li><a routerLink="/productos">PRODUCTOS</a></li>
+          <li><a routerLink="/carrito" class="btn btn-outline-dark">CARRITO <span id="num_cart" class="badge bg-dark">{{ numCart }}</span></a></li>
+          <div class="home-container">
+           
+            <button class="button-logout" (click)="logout()">Cerrar sesión</button>
+          </div>
+        </ul>
+        <i class="bi bi-list mobile-nav-toggle"></i>
+      </nav>
+    </div>
+  </header>
+  <div class="header-container">
+    <img src="assets/img/funko/enca.jpg" alt="Encabezado" class="header-image">
+    <div class="header-text">
+      <h1>TUS PRODUCTOS</h1>
+      <p>que variedad gran variedad seleccionaste</p>
+    </div>
+  </div>
+  
+<div class="carrito-container">
+    <h2>Carrito de Compras</h2>
+    
+    <!-- Tabla para mostrar los productos en el carrito -->
+    <table class="table table-striped">
+      <thead>
+        <tr>
+            <th>Imagen</th>
+          <th>Nombre</th>
+          <th>Precio</th>
+          <th>Cantidad</th>
+          <th>Total</th>
+          <th>Acciones</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let item of carrito">
+          <td><img *ngIf="item.imagen_url" [src]="item.imagen_url" alt="{{ item.Nombre }}" class="carrito-img"></td>
+          <td>{{ item.Nombre }}</td>
+          <td>{{ item.precio | currency }}</td>
+          <td>
+            <input type="number" [(ngModel)]="item.cantidad" (change)="updateCantidad(item, item.cantidad)" min="1">
+          </td>
+          <td>{{ item.precio * item.cantidad | currency }}</td>
+          <td>
+            <button (click)="removeFromCart(item)" class="btn btn-danger">Eliminar</button>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+    
+    <!-- Mostrar el total del carrito -->
+    <h3>Total: {{ total | currency }}</h3>
+  </div>
+  

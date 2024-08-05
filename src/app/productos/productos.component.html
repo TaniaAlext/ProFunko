@@ -1,0 +1,47 @@
+
+<header id="header" class="d-flex align-items-center">
+    <div class="container d-flex justify-content-between align-items-center">
+     
+        <h1 class="title">ProFunko</h1>
+      
+      <nav id="navbar" class="navbar">
+        <ul>
+          <li><a routerLink="/home">INICIO</a></li>
+          <li><a routerLink="/acercaDe">ACERCA DE</a></li>
+          <li><a routerLink="/detalles">DETALLES</a></li>
+          <li><a routerLink="/productos">PRODUCTOS</a></li>
+          <li><a routerLink="/contact">CONTACTO</a></li>
+          <li><a routerLink="/carrito" class="btn btn-outline-dark">CARRITO <span id="num_cart" class="badge bg-dark">{{ numCart }}</span></a></li>
+          <div class="home-container">
+           +
+            <button class="button-logout" (click)="logout()">Cerrar sesión</button>
+          </div>
+        </ul>
+        <i class="bi bi-list mobile-nav-toggle"></i>
+      </nav>
+    </div>
+  </header>
+  <div class="header-container">
+    <img src="assets/img/funko/onepice.jpg" alt="Encabezado" class="header-image">
+    <div class="header-text">
+      <h1>FUNKOS</h1>
+      <p>algunos de nuestros funkos disponibles</p>
+    </div>
+  </div>
+  
+  <div class="container my-5">
+    <div class="row justify-content-center">
+      <div class="col-lg-4 col-md-6 mb-4" *ngFor="let funko of funkos">
+        <div class="card h-100 text-center">
+            <img *ngIf="funko.imagen_url" [src]="funko.imagen_url" alt="{{ funko.Nombre }}">
+          <div class="card-body">
+            <h5 class="card-title">{{funko.Nombre}}</h5>
+            <p class="card-text">{{funko.descripcion}}</p>
+            <p class="card-text"><strong>{{funko.precio | currency}}</strong></p>
+            <button class="btn btn-primary" (click)="addToCart(funko)">Añadir al Carrito</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  

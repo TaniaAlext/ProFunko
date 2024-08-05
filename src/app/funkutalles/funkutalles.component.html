@@ -1,0 +1,112 @@
+<header id="header" class="d-flex align-items-center">
+    <div class="container d-flex justify-content-between align-items-center">
+        <h1 class="title">ProFunko</h1>
+        <nav id="navbar" class="navbar">
+            <ul>
+                <li><a routerLink="/home">INICIO</a></li>
+                <li><a routerLink="/acercaDe">ACERCA DE</a></li>
+                <li><a routerLink="/funkutalles">FUNKOTALLES</a></li>
+                <li><a routerLink="/productos">PRODUCTOS</a></li>
+                <li><a routerLink="/carrito" class="btn btn-outline-dark">CARRITO <span id="num_cart" class="badge bg-dark">{{ numCart }}</span></a></li>
+                <div class="home-container">
+                    <button class="button-logout" (click)="logout()">Cerrar sesión</button>
+                </div>
+            </ul>
+            <i class="bi bi-list mobile-nav-toggle"></i>
+        </nav>
+    </div>
+</header>
+
+<div class="header-container">
+    <img src="assets/img/funko/coco.jpg" alt="Encabezado" class="header-image">
+    <div class="header-text">
+        <h1>FUNKOTALLES</h1>
+        <p>Curiosidades y novedades</p>
+    </div>
+</div>
+
+<section class="histori-section">
+    <div class="content-container">
+        <div class="text-container">
+            <h3>Historia de los Funkos</h3>
+            <p>Los Funko Pops fueron creados en 1998 por Mike Becker bajo el nombre de "Funko". La empresa se dedicaba inicialmente a producir figuras con licencia y juguetes bobblehead de poca producción. Con el tiempo, Funko ha expandido su línea de productos para incluir una amplia variedad de figuras de vinilo, llaveros, peluches y otros coleccionables basados en personajes de la cultura pop.</p>
+        </div>
+        <div class="image-container">
+            <img src="assets/img/funko/ser.jpg" alt="Historia de Funko" class="resized-image">
+        </div>
+    </div>
+</section>
+
+<div class="funkutalles-container">
+    <h2>Cómo Identificar un Funko Pop Falso</h2>
+    
+    <section class="section">
+        <div class="content-container">
+            <div class="text-container">
+                <h3>1. Verifica el Empaque</h3>
+                <p>El empaque del Funko Pop original suele tener una calidad de impresión muy alta. Los colores deben ser vibrantes y las imágenes nítidas.</p>
+            </div>
+            <div class="image-container">
+                <img src="assets/img/funko/fake1.jpg" alt="Empaque Original" class="resized-image">
+                <img src="assets/img/funko/fake4.jpg" alt="Empaque Falso" class="resized-image">
+            </div>
+        </div>
+    </section>
+    
+    <section class="section">
+        <div class="content-container">
+            <div class="text-container">
+                <h3>2. Calidad de la Pintura</h3>
+                <p>Los Funkos originales tienen una pintura precisa y detallada. Los falsos suelen tener manchas y una calidad de pintura más pobre.</p>
+            </div>
+            <div class="image-container">
+                <img src="assets/img/funko/fake2.jpg" alt="Pintura Original" class="resized-image">
+                <img src="assets/img/funko/fake3.jpg" alt="Pintura Falsa" class="resized-image">
+            </div>
+        </div>
+    </section>
+    
+    <section class="section">
+        <div class="content-container">
+            <div class="text-container">
+                <h3>3. Detalles y Textura</h3>
+                <p>Los detalles en los Funkos originales son mucho más finos y bien definidos. Los Funkos falsos pueden tener detalles borrosos y una textura más rugosa.</p>
+            </div>
+            <div class="image-container">
+                <img src="assets/img/funko/fake7.jpg" alt="Detalle Original" class="resized-image">
+            </div>
+        </div>
+    </section>
+
+    <section class="section">
+        <div class="content-container">
+            <div class="text-container">
+                <h3>4. El número de serie de la figura nos ayudará a determinar si es un Funko original o se trata de una réplica</h3>
+                <p>El número de serie se encuentra en la parte inferior de la caja y podemos encontrar este número de 3 maneras diferentes: una pegatina blanca rectangular con los dígitos en negro, impresa directamente en la caja en color negro, o grabada en la solapa inferior de la caja. Estas tres formas determinan la procedencia o lugar de fabricación del Funko (China o Vietnam). Si el muñeco cabezón que queremos adquirir no presenta ninguno de estos números de serie, podemos asegurar que se trata de un Funko POP falso.</p>
+            </div>
+            <div class="image-container">
+                <img src="assets/img/funko/fake5.jpg" alt="Detalle Original" class="resized-image">
+                <img src="assets/img/funko/fake6.jpg" alt="Detalle Falso" class="resized-image">
+            </div>
+        </div>
+    </section>
+  
+    <section class="video-container">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/V-DGcKKN7H0?autoplay=1" 
+                            title="YouTube video player" frameborder="0" 
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                            allowfullscreen></iframe>
+                </div>
+                <div class="col-md-6 d-flex align-items-center">
+                    <div>
+                        <h2>Original vs Falso</h2>
+                        <p>Aun tienes dudas para ver si tu Funko es original, aquí un video de ayuda.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</div>

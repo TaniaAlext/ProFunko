@@ -1,0 +1,136 @@
+
+/* Header Styles */
+#header {
+  background: #287ed4;
+  padding: 15px 0;
+}
+#header  h1 {
+  font-size: 28px;
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
+  color: #e4e5e9;
+  margin: 0;
+}
+#header .navbar {
+  margin: 0;
+}
+#header .navbar ul {
+  display: flex;
+  list-style: none;
+}
+#header .navbar ul li {
+  margin-left: 20px;
+}
+#header .navbar ul li a {
+  color: #fff;
+  text-decoration: none;
+}
+#header .btn-outline-dark {
+  color: #fff;
+  border: 1px solid #fff;
+}
+
+/* Carousel Styles */
+.carousel-image {
+  height: 500px;
+  object-fit: cover;
+}
+
+/* Cards Styles */
+.cards-section {
+  padding: 60px 0;
+}
+.cards-section .card {
+  border: none;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin-bottom: 30px;
+}
+.cards-section .card-img-top {
+  height: 200px;
+  object-fit: cover;
+}
+
+/* Specs Styles */
+.specs {
+  padding: 60px 0;
+}
+.specs h2 {
+  margin-bottom: 20px;
+}
+.specs ul {
+  list-style: none;
+  padding: 0;
+}
+.specs ul li {
+  margin-bottom: 10px;
+}
+
+/* Features Styles */
+.features-section {
+  background: #7f99b4;
+  padding: 60px 0;
+}
+.features-section .feature-image {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+.features-section h3 {
+  margin-top: 15px;
+}
+.features-section .feature-list {
+  list-style: none;
+  padding: 0;
+}
+.features-section .feature-list li {
+  margin-top: 5px;
+}
+
+/* Ratings Styles */
+.ratings {
+  padding: 60px 0;
+}
+.ratings h2 {
+  margin-bottom: 20px;
+}
+.ratings .rating {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+.ratings .star {
+  font-size: 24px;
+  color: #ffc107;
+}
+.ratings .star:not(.active) {
+  color: #e4e5e9;
+}
+/*video*/
+#video-text-section {
+  margin: 50px 0;
+}
+#video-text-section h2 {
+  margin-bottom: 20px;
+}
+/* Footer Styles */
+.footer {
+  padding: 20px 0;
+}
+.footer p {
+  margin: 0;
+}
+.footer .social-links {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+}
+.footer .social-links li {
+  margin: 0 10px;
+}
+.footer .social-links a {
+  color: #fff;
+  font-size: 18px;
+  text-decoration: none;
+}

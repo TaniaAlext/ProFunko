@@ -1,0 +1,40 @@
+form {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+  }
+  
+  label {
+    margin-top: 10px;
+  }
+  
+  input {
+    padding: 5px;
+    margin-top: 5px;
+  }
+  
+  button {
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #45a049;
+  }
+  
+  ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  li {
+    background: #f4f4f4;
+    margin: 5px 0;
+    padding: 10px;
+    border: 1px solid #ddd;
+  }
+  

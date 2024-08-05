@@ -1,0 +1,115 @@
+
+/* Estilos para el contenedor principal */
+.funko-container {
+  
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  /* Estilos para el título */
+  .funko-container h2 {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  /* Estilos para el formulario */
+  .funko-container form {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    grid-row-gap: 10px;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .funko-container form label {
+    font-weight: bold;
+  }
+  
+  .funko-container form input {
+    width: 100%;
+    padding: 8px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  .funko-container form button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #0976dc;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .funko-container form button:hover {
+    background-color: #0976dc;
+  }
+  
+  .funko-container form button[type="button"] {
+    background-color: #81d0f5;
+  }
+  
+  .funko-container form button[type="button"]:hover {
+    background-color: #81d0f5;
+  }
+  
+  /* Estilos para la tabla */
+  .funko-container table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+  }
+  
+  .funko-container table th,
+  .funko-container table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+  }
+  
+  .funko-container table th {
+    background-color: #f2f2f2;
+  }
+  
+  .funko-container table tr:nth-child(even) {
+    background-color: #f2f2f2;
+  }
+  
+  .funko-container table tr:hover {
+    background-color: #ddd;
+  }
+  
+  /* Estilos para los botones en la tabla */
+  .funko-container table button {
+    padding: 5px 10px;
+    font-size: 14px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .funko-container table button:hover {
+    background-color: #0056b3;
+  }
+  .image-container {
+    width: 150px; /* Ajusta el tamaño según sea necesario */
+    height: 150px; /* Ajusta el tamaño según sea necesario */
+    overflow: hidden; /* Oculta cualquier parte de la imagen que se salga del contenedor */
+    display: flex; /* Usa flexbox para centrar la imagen */
+    justify-content: center;
+    align-items: center;
+  }
+  
+  /* Estilo para la imagen */
+  .image-container img {
+    max-width: 100%; /* Asegura que la imagen no se desborde del contenedor */
+    max-height: 100%; /* Asegura que la imagen no se desborde del contenedor */
+  }
+  

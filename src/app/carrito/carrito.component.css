@@ -1,0 +1,124 @@
+/* Header Styles */
+#header {
+    background: #287ed4;
+    padding: 15px 0;
+  }
+  #header  h1 {
+    font-size: 28px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    color: #e4e5e9;
+    margin: 0;
+  }
+  #header .navbar {
+    margin: 0;
+  }
+  #header .navbar ul {
+    display: flex;
+    list-style: none;
+  }
+  #header .navbar ul li {
+    margin-left: 20px;
+  }
+  #header .navbar ul li a {
+    color: #fff;
+    text-decoration: none;
+  }
+  #header .btn-outline-dark {
+    color: #fff;
+    border: 1px solid #fff;
+  }
+  .header-container {
+    position: relative;
+    width: 100%;
+    height: 400px; /* Ajusta la altura según tus necesidades */
+  }
+  
+  .header-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Esto asegurará que la imagen cubra completamente el contenedor */
+  }
+  
+  .header-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    text-align: center;
+    background-color: rgba(6, 0, 189, 0.5); /* Fondo semi-transparente para mejor legibilidad */
+    padding: 20px;
+    border-radius: 10px;
+  }
+  
+  .header-text h1 {
+    margin: 0;
+    font-size: 3em;
+  }
+  
+  .header-text p {
+    margin: 0;
+    font-size: 1.5em;
+  }
+  
+.carrito-container {
+    padding: 20px;
+    max-width: 800px;
+    margin: auto;
+  }
+  
+  .table {
+    width: 100%;
+    margin-bottom: 1rem;
+    color: #4290df;
+   
+  }
+  
+  .table thead th {
+    vertical-align: bottom;
+    border-bottom: 2px solid #dee2e6;
+    background-color: #4290df;
+  }
+  
+  .table tbody + tbody {
+    border-top: 2px solid #dee2e6;
+  }
+  
+  .table .btn {
+    margin: 0;
+  }
+  
+  .table td, .table th {
+    padding: .75rem;
+    vertical-align: top;
+    border-top: 1px solid #dee2e6;
+  }
+  
+  .table .btn-danger {
+    color: #fff;
+    background-color: #dc3545;
+    border-color: #dc3545;
+  }
+  
+  .table .btn-danger:hover {
+    color: #fff;
+    background-color: #c82333;
+    border-color: #bd2130;
+  }
+  
+  h2, h3 {
+    text-align: center;
+    margin-bottom: 20px;
+    color:#4290df
+  }
+  
+  input[type="number"] {
+    width: 100px;
+  }
+  .carrito-img {
+    max-width: 100px; /* Ajusta el tamaño máximo de las imágenes */
+    max-height: 100px; /* Ajusta la altura máxima de las imágenes */
+    object-fit: cover; /* Mantiene la relación de aspecto y recorta las imágenes si es necesario */
+    border-radius: 4px; /* Opcional: Añade bordes redondeados a las imágenes */
+  }
+  

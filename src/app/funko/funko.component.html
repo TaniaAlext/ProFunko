@@ -1,0 +1,63 @@
+<div class="funko-container">
+  
+    <h2>Bienvenido, {{ user?.username }}!</h2> <!-- Muestra el nombre del usuario -->
+    <button class="button-logout" (click)="logout()">Cerrar sesión</button>
+  
+    <!-- Aquí va el resto del contenido del formulario y la tabla -->
+  
+  <h2>Registro de Funko Pop</h2>
+
+  <form (ngSubmit)="funko.id_Funko ? updateFunko() : createFunko()">
+    <label for="nombre">Nombre:</label>
+    <input type="text" id="nombre" [(ngModel)]="funko.Nombre" name="nombre" required>
+
+    <label for="precio">Precio:</label>
+    <input type="number" id="precio" [(ngModel)]="funko.precio" name="precio" required>
+
+    <label for="cantidad">Cantidad:</label>
+    <input type="number" id="cantidad" [(ngModel)]="funko.cantidad" name="cantidad" required>
+    <label for="id_categoria">Categoría:</label>
+    <select id="id_categoria" [(ngModel)]="funko.id_categoria" name="id_categoria" required>
+      <option *ngFor="let categoria of categoriaa" [value]="categoria.Id_categoria">
+        {{ categoria.nombre }} - {{ categoria.Descripcion }}
+      </option>
+    </select>
+    <label for="imagen">Imagen:</label>
+    <input type="file" id="imagen" (change)="onFileChange($event)">
+
+    <button type="submit">{{ funko.id_Funko ? 'Update' : 'Create' }}</button>
+    <button type="button" (click)="clearForm()">Clear</button>
+  </form>
+
+  <table>
+    <thead>
+      <tr>
+        <th>ID</th>
+        <th>Nombre</th>
+        <th>Precio</th>
+        <th>Cantidad</th>
+        <th>Categoría </th>
+        <th>Imagen</th>
+        <th>Acciones</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let funko of funkos">
+        <td>{{ funko.id_Funko }}</td>
+        <td>{{ funko.Nombre }}</td>
+        <td>{{ funko.precio }}</td>
+        <td>{{ funko.cantidad }}</td>
+        <td>{{ funko.categoria_nombre }} - {{ funko.categoria_Descripcion }}</td>
+        <td><div class="image-container">
+          <img *ngIf="funko.imagen_url" [src]="funko.imagen_url" alt="{{ funko.Nombre }}">
+        </div>
+      </td>
+      
+        <td>
+          <button (click)="editFunko(funko)">Edit</button>
+          <button (click)="deleteFunko(funko.id_Funko)">Delete</button>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>
